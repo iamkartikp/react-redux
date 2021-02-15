@@ -8,6 +8,10 @@ h1 {
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .App {
   box-shadow: inset 120px 200px 250px black;
   position: absolute;
@@ -57,12 +61,34 @@ h1 {
   text-align: center;
 }
 
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.btns input {
+  margin: 0 10px;
+  height: 7vh;
+}
+
+.btns input:hover {
+  cursor: pointer;
+}
+
 .signin-btn {  
   font-size: 1.2rem;
-  padding: 12px;
   border-radius: 10px;
   font-family: 'Hammersmith One', sans-serif;
   background: #912F40;
+  color: white;
+  outline: none;
+  border: none;
+}
+.signup-btn {  
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-family: 'Hammersmith One', sans-serif;
+  background: #4F8CCC;
   color: white;
   outline: none;
   border: none;
@@ -88,4 +114,90 @@ h1 {
   font-family: 'Hammersmith One', sans-serif;
   color: white;
   font-size: 1.2rem;
+}
+
+/* signin.jsx */
+
+.signin {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.521);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.entry-popup {
+  padding: 25px;
+  border-radius: 5px;
+  width: 30vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-popup h1{
+  color: #080705;
+}
+
+.entry-popup i {
+  color: #080705;
+}
+
+.entry-popup i:hover {
+  cursor: pointer;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-form * {
+  margin: 10px 0;
+}
+
+.entry-form input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background: #EFEFEF;
+}
+
+.entry-form input::placeholder {
+  font-family: 'Kanit';
+  font-weight: bold;
+}
+
+.entry-form button {
+  outline: none;
+  border: none;
+  font-family: 'Kanit';
+  font-weight: bold;
+  background: #912F40;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Signup.jsx */
+
+.signup {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.521);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.entry-row input {
+  margin: auto 5px;
 }
