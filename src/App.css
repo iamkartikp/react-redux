@@ -13,7 +13,7 @@ button:hover {
 }
 
 .App {
-  box-shadow: inset 120px 200px 250px black;
+  box-shadow: inset 0px 0px 250px 75px black;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -200,4 +200,54 @@ button:hover {
 
 .entry-row input {
   margin: auto 5px;
+}
+
+/* Profile.jsx */
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 100px;
+  height: 80%;
+}
+
+.profile i, .profile p {
+  color: white;
+}
+
+.secone-text {
+  display: flex;
+}
+
+.secone-text i {
+  cursor: pointer;
+}
+
+.secone-text p {
+  font-size: 2rem;
+}
+
+.secone-text p, .secone-text i {
+  margin: auto 10px;
+}
+
+.secone-img img {
+  cursor: pointer;
+  margin: auto 10px;
+  height: 200px;
+  width: 140px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.sec-two img {
+  height: 300px;
+  width: 450px;
+  border-radius: 10px;
+}
+
+.sec-two p {
+  font-size: 2.4rem;
+  font-weight: 400;
 }
